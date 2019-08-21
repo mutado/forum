@@ -1,5 +1,5 @@
 <?php
-
+//id is topic.id of post
 require_once('../../connect.php');
 
 $size;
@@ -32,7 +32,7 @@ if (!isset($_GET['id'])){
            WHERE
            posts.post_topic = " . mysqli_real_escape_string($link_db, $_GET['id']) ."
            ORDER BY post_id DESC
-           LIMIT ".$size."")){
+           LIMIT ".$size)){
                
             echo '<table border="1">';
 

@@ -17,7 +17,7 @@ include("src/elements/header.php");
 
 
     <script>
-        setInterval(() => {
+        // setInterval(() => {
             var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -25,9 +25,9 @@ include("src/elements/header.php");
      
     }
   };
-  xhttp.open("GET", "src/api/post.php?id=2&size=20", true);
+  xhttp.open("GET", "src/api/topics.php?id=1&size=20", true);
   xhttp.send();
-        }, 5000);
+        // }, 1000);
     </script>
 </body>
 </html>

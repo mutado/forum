@@ -177,3 +177,21 @@ main .main__content table.categories tr td:nth-child(2n){
     text-align: right;
     width: fit-content;
 }
+
+
+main .main__content .card{
+    display: flex;
+    width: 100%;
+    border: #424250 1px solid;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main .main__content .card .bigpart{
+    width: 70%;
+}
+main .main__content .card .smallpart{
+    width: 30%;
+    text-align: right;
+    border-left: #424250 1px solid;
+
+}
