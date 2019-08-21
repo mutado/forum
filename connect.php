@@ -1,11 +1,14 @@
 <?php
 //connect.php
 session_start();
+require_once('src/classes/sqlQuerry.php');
 
 $server = 'localhost';
 $username = 'root';
 $password = '';
 $database = 'forum_db';
+
+$querry = new Querry($server,$username,$password,$database);
 
 $link_db = mysqli_connect($server, $username, $password);
 

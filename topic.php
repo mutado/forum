@@ -88,7 +88,7 @@ ON
                     echo 'Error' . mysqli_error($link_db);
                 } else {
                     echo 'New post added successful.';
-                    header("Refresh:0");
+                    // header("Refresh:0");
                 }
             }
         }
