@@ -12,12 +12,15 @@ include("src/elements/header.php");
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="temp">
+    </div>
+
+
     <script>
     var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.querySelector('.main__content').innerHTML = this.responseText;
+        document.querySelector('.temp').innerHTML = this.responseText;
      
     }
   };
