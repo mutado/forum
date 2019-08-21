@@ -3,11 +3,12 @@
 session_start();
 
 $server = 'localhost';
-$username = 'public';
-$password = 'WnSbTEbamYg3ay9m';
+$username = 'root';
+$password = '';
 $database = 'forum_db';
 
 $link_db = mysqli_connect($server, $username, $password);
+
 if (!$link_db) {
     exit('Error: could not establish database connection');
 }
