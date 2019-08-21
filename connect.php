@@ -3,8 +3,8 @@
 session_start();
 
 $server = 'localhost';
-$username = 'mutado';
-$password = '2304';
+$username = 'public';
+$password = 'WnSbTEbamYg3ay9m';
 $database = 'forum_db';
 
 $link_db = mysqli_connect($server, $username, $password);
