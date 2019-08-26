@@ -1,6 +1,7 @@
 <?php
 //connect.php
 session_start();
+
 require_once('src/classes/sqlQuerry.php');
 
 $server = 'localhost';

@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
         if (!$result) {
             //something went wrong, display the error
             echo 'Something went wrong while registering. Please try again later.';
-            //echo mysql_error(); //debugging purposes, uncomment when needed
+            echo mysqli_error($link_db); //debugging purposes, uncomment when needed
         } else {
             echo 'Successfully registered. You can now <a href="signin.php">sign in</a> and start posting! :-)';
         }

@@ -193,5 +193,7 @@ main .main__content .card .smallpart{
     width: 30%;
     text-align: right;
     border-left: #424250 1px solid;
-
+}
+.categories .card{
+    flex-direction: column;
 }
